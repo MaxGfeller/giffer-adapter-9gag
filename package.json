@@ -1,0 +1,19 @@
+{
+  "name": "giffer-adapter-9gag",
+  "version": "0.0.0",
+  "description": "Giffer adapter for 9gag",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap tests/test-*.js"
+  },
+  "author": "Max Gfeller <max.gfeller@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "concat-stream": "^1.4.6",
+    "inherits": "^2.0.1",
+    "request": "^2.37.0"
+  },
+  "devDependencies": {
+    "tap": "^0.4.11"
+  }
+}
