@@ -31,6 +31,8 @@ Adapter.prototype._getPage = function(id) {
 
         var obj = JSON.parse(body)
 
+        if(!obj.data) return self.stop()
+
         obj.data.map(function(gag) {
             request(gag.link, function(err, res, body) {
                 if (err) throw err
