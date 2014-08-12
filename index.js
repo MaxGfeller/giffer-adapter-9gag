@@ -29,7 +29,13 @@ Adapter.prototype._getPage = function(id) {
     request(this.apiEndpoint + '/' + this.page + '/' + id, function(err, res, body) {
         if (err) throw err
 
-        var obj = JSON.parse(body)
+        var obj = null
+        try {
+            obj = JSON.parse(body)
+        } catch(e) {
+            console.error(e)
+            return self.stop()
+        }
 
         if(!obj.data) return self.stop()
 
