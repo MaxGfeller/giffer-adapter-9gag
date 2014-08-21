@@ -44,7 +44,7 @@ Adapter.prototype._getPage = function(id) {
                 if (err) throw err
 
                 body.split(' ').forEach(function(str) {
-                    if (str.indexOf('cloudfront.net/photo') > -1 && str.indexOf('src') > -1 && str.indexOf('.gif') > -1) {
+                    if (str.indexOf('img-9gag-lol.9cache.com/photo') > -1 && str.indexOf('src') > -1 && str.indexOf('.gif') > -1) {
                         self.emit('gif', str.substring(str.indexOf('"')).replace(/"/g, ''), { origin: gag.link })
                     }
                 })
