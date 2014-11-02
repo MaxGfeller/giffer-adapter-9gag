@@ -8,7 +8,7 @@ inherits(Adapter, EventEmitter)
 
     function Adapter(config) {
         this.page = config.page || 'hot'
-        this.apiEndpoint = config.apiEndpoint || 'http://infinigag.eu01.aws.af.cm'
+        this.apiEndpoint = config.apiEndpoint || 'http://infinigag-us.aws.af.cm'
         this.maxPages = config.maxPages || 1
         EventEmitter.call(this)
     }
